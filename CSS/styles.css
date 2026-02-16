@@ -1,0 +1,39 @@
+/**
+ * DOCUMENTACIÓN TÉCNICA: HOJA DE ESTILOS EN CASCADA (CSS)
+ * Archivo: style.css (Modificado)
+ */
+
+#canvas {
+    /* 1. RELLENO (Background Color) - Café claro */
+    /* Propósito: Establecer el color de fondo del elemento contenedor.
+       Valor: #D7CCC8 (Un tono marrón claro tipo beige o arena). 
+       Nota: Esto reemplaza el amarillo anterior (#ffe606). */
+    background-color: #D7CCC8;
+
+    /* 2. BORDE (Border) - Línea sólida café oscuro */
+    /* Propósito: Delimitar el perímetro con una línea sólida.
+       Sintaxis: grosor | estilo | color
+       Valor: 2px solid #4E342E (Se aumentó el grosor a 2px para mayor
+       visibilidad y se usó un tono café oscuro intenso). */
+    border: 2px solid #4E342E;
+
+    /* 3. ESQUINAS REDONDEADAS (Border Radius) */
+    /* Propósito: Suavizar los vértices de la caja rectangular.
+       Valor: 15px (Define el radio del círculo imaginario en las esquinas. 
+       A mayor valor, más redonda la esquina). */
+    border-radius: 15px;
+
+    /* 4. SOMBRA PROYECTADA (Box Shadow) */
+    /* Propósito: Generar una sombra externa para simular elevación y profundidad.
+       Sintaxis: offset-x | offset-y | blur-radius | spread-radius | color
+       Valores explicados:
+       - 8px: Desplazamiento horizontal de la sombra hacia la derecha.
+       - 8px: Desplazamiento vertical de la sombra hacia abajo.
+       - 15px: Radio de desenfoque (blur). Cuanto mayor, más difusa la sombra.
+       - rgba(0,0,0, 0.4): Color negro con 40% de opacidad para realismo. */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+
+    /* Opcional: Centrado y margen para mejor visualización en pantalla */
+    display: block; /* Asegura que se comporte como bloque para poder centrarlo */
+    margin: 20px auto; /* Centra el elemento horizontalmente en la página */
+}
